@@ -10,9 +10,10 @@ homepage: "https://github.com/username/reponame"
 doc: "https://url/to/documentation"
 bug-reports: "https://github.com/username/reponame/issues"
 depends: [
-  "dune" {>= "3.19"}
+  "dune" {>= "3.16"}
   "ocaml"
   "utop"
+  "core"
   "odoc" {with-doc}
 ]
 build: [
@@ -30,4 +31,3 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/username/reponame.git"
-x-maintenance-intent: ["(latest)"]

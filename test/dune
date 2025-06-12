@@ -1,2 +1,6 @@
-(test
- (name test_plants))
+(library
+ (name plants_test)
+ (libraries plants)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test ppx_expect)))

@@ -1,4 +1,4 @@
-(lang dune 3.19)
+(lang dune 3.16)
 
 (name plants)
 
@@ -19,7 +19,7 @@
  (name plants)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml utop)
+ (depends ocaml utop core)
  (tags
   ("add topics" "to describe" your project)))
 
