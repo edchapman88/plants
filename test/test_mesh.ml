@@ -3,7 +3,7 @@ open Plants.Mesh
 let arrange_grid () =
   let nodes = Grid.of_arrays [| [| 0; 1 |]; [| 2; 3 |] |] in
   let edge_fn = ( + ) in
-  of_nodes nodes edge_fn
+  of_nodes ~edge_fn nodes
 
 let%expect_test "create mesh" =
   let m = arrange_grid () in
