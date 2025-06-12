@@ -20,3 +20,5 @@ let diffuse mesh =
       let quant' = quant +. (-1.0 *. d *. delta) in
       { quant = quant'; d })
     mesh
+
+let map f m = Mesh.mapi ~edge_fn:grad f m |> diffuse

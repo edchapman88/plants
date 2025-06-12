@@ -1,5 +1,5 @@
-open Plants.Diffuse
 open Plants.Mesh
+open Plants.Amount
 
 let arrange_node_grid () =
   Grid.mapi
@@ -19,7 +19,8 @@ let%expect_test "diffuse" =
       loop (n - 1) (diffuse mesh))
   in
   loop 10 m;
-  [%expect {|
+  [%expect
+    {|
     0.000 1.000
     2.000 3.000
 
