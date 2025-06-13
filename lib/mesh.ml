@@ -78,6 +78,7 @@ let of_nodes ~edge_fn nodes =
   in
   { nodes; edges }
 
+let node_grid_of_t mesh = mesh.nodes
 let mapi ~edge_fn f mesh = Grid.mapi f mesh.nodes |> of_nodes ~edge_fn
 
 let string_of_mesh ~str_el mesh =

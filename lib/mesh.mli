@@ -30,6 +30,8 @@ val edge_at : ('a, 'b) t -> loc -> dir -> 'b
 val of_nodes : edge_fn:('a -> 'a -> 'b) -> 'a Grid.t -> ('a, 'b) t
 (** [of_nodes node_grid edge_fn] is a [node edge mesh]. Where [edge_fn node_a node_b] is the edge between [node_a] and [node_b]. *)
 
+val node_grid_of_t : ('a, 'b) t -> 'a Grid.t
+
 val mapi :
   edge_fn:('c -> 'c -> 'd) -> (loc -> 'a -> 'c) -> ('a, 'b) t -> ('c, 'd) t
 
